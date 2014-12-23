@@ -1,0 +1,2 @@
+# Bro Package Creation for Debian ARM
+* This directory houses helper scripts to build Bro IDS deb packages for Debian ARM
