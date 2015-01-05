@@ -1,0 +1,20 @@
+Origin: Hackgnar
+Label: Hackgnar Github
+Suite: stable
+Codename: wheezy
+Date: Mon, 05 Jan 2015 18:18:59 UTC
+Architectures: armel
+Components: main
+Description: Debian ARM packages hosted on hackgnars guthub repository
+MD5Sum:
+ 481865065388756c27b7aa48076a774c 600 main/binary-armel/Packages
+ 6ba7c73cfe2cea67ba015699dc7fb7a2 423 main/binary-armel/Packages.gz
+ 067b81eeac7b170cd0abfcdadb91e26f 163 main/binary-armel/Release
+SHA1:
+ 632766068ab28979edf378f4876e3f4fd1059cd2 600 main/binary-armel/Packages
+ 06f1ae25c26c18c36797d42204ccfc8d096f34d4 423 main/binary-armel/Packages.gz
+ 236fb55378ac143bf5c4aeae40ebb21be4654fb3 163 main/binary-armel/Release
+SHA256:
+ 545119c69a2f030617a91faa7d7fa149dae83ed6501b98a1cb9394764e25c434 600 main/binary-armel/Packages
+ c74bace44e66da7f620db17ab291da794cf01bd3146f07104664958b1b301321 423 main/binary-armel/Packages.gz
+ fd4c0027ff191334b82f9483da94ed5e50335f964db810c5c296c104e45d3713 163 main/binary-armel/Release
