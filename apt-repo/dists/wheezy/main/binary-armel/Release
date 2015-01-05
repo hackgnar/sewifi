@@ -1,6 +1,0 @@
-Archive: stable
-Component: main
-Origin: Hackgnar
-Label: Hackgnar Github
-Architecture: armel
-Description: Debian ARM packages hosted on hackgnars guthub repository

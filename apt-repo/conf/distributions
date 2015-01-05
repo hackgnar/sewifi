@@ -1,7 +1,0 @@
-Origin: Hackgnar
-Label: Hackgnar Github
-Suite: stable
-Codename: wheezy
-Architectures: armel
-Components: main
-Description: Debian ARM packages hosted on hackgnars guthub repository
