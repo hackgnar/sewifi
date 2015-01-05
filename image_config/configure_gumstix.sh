@@ -4,7 +4,11 @@ echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf
 
 #quick and dirty... Ill change this to iptables-persistent or an interface preup hook
+iptables -A INPUT -i mlan0 -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -t nat -A POSTROUTING -o mlan0 -j MASQUERADE
+iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i usb0 -o mlan0 -j ACCEPT
+iptables -A INPUT -i mlan0 -j DROP
 iptables-save > /etc/iptables.conf
 sed -i -e "s/exit 0/iptables-restore < \/etc\/iptables.conf\nexit 0/g" /etc/rc.local
 
