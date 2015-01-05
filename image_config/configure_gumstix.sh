@@ -10,7 +10,7 @@ iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 iptables -A FORWARD -i usb0 -o mlan0 -j ACCEPT
 iptables -A INPUT -i mlan0 -j DROP
 iptables-save > /etc/iptables.conf
-sed -i -e "s/exit 0/iptables-restore < \/etc\/iptables.conf\nexit 0/g" /etc/rc.local
+sed -i -e "s/^exit 0/iptables-restore < \/etc\/iptables.conf\nexit 0/g" /etc/rc.local
 
 #quick and dirty... Ill setup a proper apt repo for this bro package
 #/opt/bro/bin/bro -i usb0 /opt/bro/share/bro/site/local.bro &
@@ -23,5 +23,5 @@ echo "172.16.1.0/16      Private IP space" > /opt/bro/etc/networks.cfg
 sed -i -e "s/eth0/usb0/g" /opt/bro/etc/node.cfg
 /opt/bro/bin/broctl install
 /opt/bro/bin/broctl start
-sed -i -e "s/exit 0/\/opt\/bro\/bin\/broctl start\nexit 0/g" /etc/rc.local
+sed -i -e "s/^exit 0/\/opt\/bro\/bin\/broctl start\nexit 0/g" /etc/rc.local
 echo "*/5 * * * * root /opt/bro/bin/broctl cron" >> /etc/crontab
