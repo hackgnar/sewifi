@@ -1,3 +1,6 @@
+<a href="https://twitter.com/hackgnar" class="twitter-follow-button" data-show-count="true">Follow @hackgnar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 All documentaion and code hosted here is a huge work in progress.  Im in the process of writing docs, porting existing code and cleanup.
 
 # The SEWiFi Project
@@ -5,6 +8,14 @@ All documentaion and code hosted here is a huge work in progress.  Im in the pro
 * The project is currently in its early stages.
 * The current hardware for this project is a Gumstix Overo ARM board with an Overo Thunbo daughter board.
 * The base OS is a tweeked Debian ARM Linux distribution.
+
+## Install
+### (option 1) Download preconfigured image
+### (option 2) Install from sewifi deb on clean debian/kali Gumstix Overo image
+### Flash to SD card
+
+
+# THE FOLLOWING WILL BE REMOVED WITH LINKS TO THE DEB INSTALL GUIDE
 
 ## Install
 To install the base os, you must first obtain the base system image via one of three methods:
