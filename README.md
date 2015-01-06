@@ -1,7 +1,7 @@
 <a href="https://twitter.com/hackgnar" class="twitter-follow-button" data-show-count="true">Follow @hackgnar</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<iframe src="//platform.twitter.com/widgets/follow_button.html?screen_name=twitterapi" style="width: 300px; height: 20px;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+[![Follow Hackgnar](https://raw.githubusercontent.com/hackgnar/sewifi/master/img/twitter_hackgnar.png)](https://twitter.com/hackgnar)
 
 All documentaion and code hosted here is a huge work in progress.  Im in the process of writing docs, porting existing code and cleanup.
 
