@@ -48,8 +48,9 @@ Currently, to configure the device, do the following:
 
 ## Future Work
 1. Making the SEWiFi device easy to use for everyday users.
-    * Web configuration console
     * Masquirade as popular USB wifi device
+    * Web configuration console
+    * Serve configuration files over a USB filesystem mount
 2. Making the hardware for the SEWiFi project more affordable.
     * This is currently a work in progress.  I am looking at a different board which would bring the price point closer to $50 instead of $200
 3. Making the hardware for the SEWiFi project smaller.
