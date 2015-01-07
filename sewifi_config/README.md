@@ -1,4 +1,4 @@
-[![Follow Hackgnar](https://raw.githubusercontent.com/hackgnar/sewifi/master/img/twitter_hackgnar.png)](https://twitter.com/hackgnar)
+[![Follow Hackgnar](../static/twitter_hackgnar.png)](https://twitter.com/hackgnar)
 
 # SEWiFi Base OS Configuation
 * This is the script to configure the base Debian ARM OS as an SEWiFi device.

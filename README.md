@@ -1,58 +1,36 @@
-[![Follow Hackgnar](https://raw.githubusercontent.com/hackgnar/sewifi/master/img/twitter_hackgnar.png)](https://twitter.com/hackgnar)
+[![Follow Hackgnar](static/twitter_hackgnar.png)](https://twitter.com/hackgnar)
 
-All documentaion and code hosted here is a huge work in progress.  Im in the process of writing docs, porting existing code and cleanup.
+
 
 # The SEWiFi Project
+![](static/sewifi_img_small.jpg)
+
+* **NOTE:** All documentaion and code hosted here is a huge work in progress.  Im in the process of writing docs, porting existing code and cleanup.
 * The SEWiFi project aims to create a security enhanced WiFi USB dongle.  The USB device for this project is based on a Debian ARM distribution which masqurades as a USB WiFi dongle which passes a host computers network traffic though a full security stack (i.e. Firewall, IDS, IPS, VPN, etc).
 * The project is currently in its early stages.
 * The current hardware for this project is a Gumstix Overo ARM board with an Overo Thunbo daughter board.
-* The base OS is a tweeked Debian ARM Linux distribution.
+* The base OS is a tweeked Debian ARM Linux distribution which can be installed on a base Debian system with a single deb package.
+* Precompiled images of the project can be obtained [here](https://github.com/hackgnar/gumstix-overo-images/blob/master/sewifi)
 
-## Install
+## Install SEWiFi to a Gumstix Overo with Thumbo board
 ### (option 1) Download preconfigured image
-### (option 2) Install from sewifi deb on clean debian/kali Gumstix Overo image
-### Flash to SD card
+* Documentation can be found [here](https://github.com/hackgnar/gumstix-overo-images/blob/master/sewifi/build_precompiled_image.md)
 
+### (option 2) Build your own image 
+* Documentation can be found [here](https://github.com/hackgnar/gumstix-overo-images/blob/master/sewifi/build_manually.md)
 
-# THE FOLLOWING WILL BE REMOVED WITH LINKS TO THE DEB INSTALL GUIDE
+### (option 3) Install the SEWIFI overlay deb to a preexisting Gumstix Overo Debian system
+* if you are already running Debian on a Gumstix Overo board you can simply do the following
 
-## Install
-To install the base os, you must first obtain the base system image via one of three methods:
-1. download nightly image
-2. manual build
-3. automated build
+#### Add the sewifi apt repo
+````
+cat << EOF > sewifi/etc/apt/sources.list
+deb https://raw.githubusercontent.com/hackgnar/sewifi/master/apt-repo main
+EOF
+apt-get update
+````
 
-### Download
-This is obiously the easiest method and requres you to download the following 5 files:
-```
-curl -O http://someurl.com/mk2partsd
-curl -O http://someurl.com/MLO
-curl -O http://someurl.com/u-boot.img
-curl -O http://someurl.com/uImage
-curl -O http://someurl.com/wheezy.tar.bz2
-```
-
-### Manual Build
-The manual build process takes some time but allows for the most customization.  The process includes the following steps
-#### Yocto build
-* follow the documentation found at http://github.com/hackgnar/bla
-#### Debian build
-* follow the documentation found at http://github.com/hackgnar/bla
-
-### Automated Build
-The automated build process takes some time but also allows for customization.  However you will have to alter the build scripts for your customizatons.  The process includes the following steps
-#### Yocto build
-* download and run the following script to build yocto
-```
-curl -O http://someurl.com/script
-bash script
-```
-#### Debian build
-* download and run the following script to build debian
-```
-curl -O http://someurl.com/script
-bash script
-```
-
-### Image installation
-* follow the documentation found here http://githun.com/hackgnar/bla  to install your base image
+#### Install the Overlay Package
+````
+apt-get install sewifi-gumstix-overo
+````

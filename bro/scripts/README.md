@@ -1,4 +1,4 @@
-[![Follow Hackgnar](https://raw.githubusercontent.com/hackgnar/sewifi/master/img/twitter_hackgnar.png)](https://twitter.com/hackgnar)
+[![Follow Hackgnar](../../static/twitter_hackgnar.png)](https://twitter.com/hackgnar)
 
 # Automated Script for Building Bro IDS DEB package
 * To utilize the automation script in this repo, run the following on the target Debian OS
