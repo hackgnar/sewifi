@@ -1,10 +1,9 @@
 [![Follow Hackgnar](static/twitter_hackgnar.png)](https://twitter.com/hackgnar)
 
-
-
 # The SEWiFi Project
 ![](static/sewifi_img_small.jpg)
 
+## Summary
 * **NOTE:** All documentaion and code hosted here is a huge work in progress.  Im in the process of writing docs, porting existing code and cleanup.
 * The SEWiFi project aims to create a security enhanced WiFi USB dongle.  The USB device for this project is based on a Debian ARM distribution which masqurades as a USB WiFi dongle which passes a host computers network traffic though a full security stack (i.e. Firewall, IDS, IPS, VPN, etc).
 * The project is currently in its early stages.
@@ -34,3 +33,11 @@ apt-get update
 ````
 apt-get install sewifi-gumstix-overo
 ````
+
+## Current State
+
+## Future Work
+1. Making the hardware for the SEWiFi project more affordable.
+2. Making the hardware for the SEWiFi project smaller.
+3. Making the SEWiFi device easy to use for everyday users.
+
