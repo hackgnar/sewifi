@@ -1,10 +1,11 @@
 [![Follow Hackgnar](static/twitter_hackgnar.png)](https://twitter.com/hackgnar)
 
+* **NOTE:** All documentaion and code hosted here is a huge work in progress.  Im in the process of writing docs, porting existing code and cleanup.
+
 # The SEWiFi Project
 ![](static/sewifi_img_small.jpg)
 
 ## Summary
-* **NOTE:** All documentaion and code hosted here is a huge work in progress.  Im in the process of writing docs, porting existing code and cleanup.
 * The SEWiFi project aims to create a security enhanced WiFi USB dongle.  The USB device for this project is based on a Debian ARM distribution which masqurades as a USB WiFi dongle which passes a host computers network traffic though a full security stack (i.e. Firewall, IDS, IPS, VPN, etc).
 * The project is currently in its early stages.
 * The current hardware for this project is a Gumstix Overo ARM board with an Overo Thunbo daughter board.
@@ -51,8 +52,9 @@ Currently, to configure the device, do the following:
     * Masquirade as popular USB wifi device
     * Web configuration console
     * Serve configuration files over a USB filesystem mount
+    * Host application & driver to send/recieve data to the SEWiFi device
 2. Making the hardware for the SEWiFi project more affordable.
-    * This is currently a work in progress.  I am looking at a different board which would bring the price point closer to $50 instead of $200
+    * This is currently a work in progress.  I am looking at a different board which would bring the price point under $100 instead of $200
 3. Making the hardware for the SEWiFi project smaller.
     * This is also a work in progress.  The board mentioned above will reduce the size considerably. 
 4. Adding actions triggered by ISD alerts.
@@ -64,4 +66,4 @@ Currently, to configure the device, do the following:
         * DNSSec
         * Alternate IDSs for the Bro haters
         * HTTPS encapsulation for non SSL traffic
-        * many many more...
+        * others...
